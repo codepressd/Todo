@@ -3,19 +3,14 @@ import Delete from "@material-ui/icons/Delete";
 import Check from "@material-ui/icons/CheckCircleOutline";
 import Return from "@material-ui/icons/KeyboardReturn";
 
+import { multiFire } from "../utils";
+
 interface ITodoItem {
     active: string;
     value: string;
     onTodoClick: (action: "ADD" | "DELETE") => (value: string) => void;
     onCompleteClick: (action: "ADD" | "DELETE") => (value: string) => void;
 }
-
-const multiFire = (first: (value: string) => void, second?: (value: string) => void) => (
-    value: string,
-) => () => {
-    first(value);
-    second && second(value);
-};
 
 export const TodoItem = (props: ITodoItem) => {
     const { active, value, onTodoClick, onCompleteClick } = props;

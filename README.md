@@ -1,3 +1,26 @@
+## QUICK TODO - PLAYING HOOKY
+
+Made this pretty quick last night but the guts of it seem to work. Not the sexiest thing I've ever built..
+
+### I went with React Hooks
+
+I went with using React Hooks instead of using some type store be it Redux or Mobx. I fealt for such a simple app you would be seeing my skills of writing boilerplate instead of coding. If you would like me to go back and show an implementation with that, no worries.
+
+I went with hooks because its that new hotness and I hadn't had a chance to really play with it.
+
+Also, I'm a fan of functional style programing and there is only one class in this app. Also, this makes it really testable since all the logic is in a few simple functions.
+
+### Commenting
+
+I tried to add comments around the main functions and what they did and also in places where it might not be the best practice but due to the simplicity of this app I thought it would be ok, but explained my reasoning.
+
+Hopefully you like it and I'll be meeting with your team!
+
+Thanks,
+
+Chris
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

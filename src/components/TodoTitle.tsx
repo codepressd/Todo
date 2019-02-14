@@ -6,7 +6,7 @@ interface ITodoTitleArea {
     className: string;
 }
 
-const hanldeSubmit = (funcToRun: (action: "ADD" | "DELETE") => (value: string) => void) => (
+const handleSubmit = (funcToRun: (action: "ADD" | "DELETE") => (value: string) => void) => (
     e: React.FormEvent<HTMLFormElement>,
 ) => {
     e.preventDefault();
@@ -20,7 +20,7 @@ export const TodoTitle = (props: ITodoTitleArea) => {
     return (
         <div className={className}>
             <p className="title">{title}</p>
-            <form onSubmit={hanldeSubmit(onSubmit)} className="form">
+            <form onSubmit={handleSubmit(onSubmit)} className="form">
                 <input id="name" placeholder="Add a todo" name="input" />
             </form>
         </div>
